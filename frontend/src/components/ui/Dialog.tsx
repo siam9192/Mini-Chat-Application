@@ -1,5 +1,5 @@
 import { Printer } from "lucide-react";
-import type { ResultResponse } from "../types/result.type";
+import type { ResultResponse } from "../../types/result.type";
 import { useRef } from "react";
 
 interface Props {

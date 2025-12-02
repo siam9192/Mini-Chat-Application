@@ -1,7 +1,7 @@
 import { useState, type FormEvent } from "react"
 import ResultDialog from "./Dialog"
-import type { ResultResponse } from "../types/result.type"
-import { fetchResult } from "../utils/helper"
+import type { ResultResponse } from "../../types/result.type"
+import { fetchResult } from "../../utils/helper"
 import { toast } from "sonner"
 
 

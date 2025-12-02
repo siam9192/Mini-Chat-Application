@@ -1,5 +1,5 @@
-import Container from "./Container"
-import SubmitForm from "./SubmitForm"
+import Container from "../ui/Container"
+import SubmitForm from "../ui/SubmitForm"
 
 
 function MainContent() {

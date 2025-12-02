@@ -1,9 +1,8 @@
-import React from "react";
 import { MessageCircle } from "lucide-react";
 
 function IntroPage() {
   return (
-    <div className="flex items-center justify-center min-h-screen bg-gray-900 text-white px-6">
+    <div className="flex items-center justify-center min-h-screen bg-base-300 text-white px-6">
       <div className="text-center max-w-md">
         <div className="flex justify-center mb-4">
           <MessageCircle size={60} className="text-blue-400" />

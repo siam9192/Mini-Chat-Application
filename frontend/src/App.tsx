@@ -1,5 +1,5 @@
 
-import IntroPage from './components/IntroPage';
+import UserHomePageLayout from './components/layout/UserHomePageLayout';
 
 
 function App() {
@@ -10,7 +10,7 @@ function App() {
     <>
      
    
-      <IntroPage/>
+     <UserHomePageLayout/>
        
 
     </>
