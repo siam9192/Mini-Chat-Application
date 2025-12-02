@@ -1,4 +1,5 @@
 import { useState } from "react";
+import AddChannelModal from "../ui/AddChannelModal";
 
 export interface Channel {
   id: string;
@@ -48,16 +49,16 @@ function Sidebar() {
   const [activeChannelId, setActiveChannelId] = useState<string | null>("1");
 
   return (
-    <aside className="bg-base-200 border-r border-base-300 flex flex-col">
+    <aside className="bg-base-200 border-r border-base-300 flex flex-col h-full">
       
       {/* Sidebar Header */}
       <div className="p-4 border-b border-base-300">
-        <h2 className="text-lg font-semibold">Channels</h2>
+        <h2 className="text-lg font-semibold">Your Chats</h2>
       </div>
 
       {/* Channel List */}
       <div className="flex-1 overflow-y-auto p-2">
-        <ul className="menu bg-base-200 rounded-box">
+        <ul className=" bg-base-200 rounded-box">
           {fakeChannels.map((channel) => (
             <li key={channel.id}>
               <a
@@ -85,11 +86,9 @@ function Sidebar() {
 
       {/* Footer / Add New Channel */}
       <div className="p-4 border-t border-base-300">
-        <button className="btn btn-primary btn-block">
-          + Add Channel
-        </button>
+        <AddChannelModal/>
       </div>
-
+   
     </aside>
   );
 }

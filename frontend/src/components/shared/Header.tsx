@@ -1,13 +1,14 @@
 
+import SidebarModal from "../ui/SidebarModal";
 import ThemeSwitchButton from "../ui/ThemeSwitchButton";
 import { MessageCircle } from "lucide-react";
 
 function Header() {
   return (
     <header className="border-b border-gray-600 bg-base-300">
-    
+      
         <div className="p-2 md:p-3 flex justify-between items-center">
-          
+           <SidebarModal/>
           {/* Left: Logo / App Title */}
           <div className="flex items-center gap-2">
             <MessageCircle size={28} className="text-blue-600 dark:text-blue-400" />

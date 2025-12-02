@@ -28,12 +28,12 @@ function MessageWriteBox({ onSend }: MessageWriteBoxProps) {
         placeholder="Type a message..."
         className="flex-1 input input-bordered input-sm rounded-lg"
         value={message}
-        onChange={(e) => setMessage(e.target.value)}
+        onChange={(e) => setMessage(e.target.value.trim())}
         onKeyPress={handleKeyPress}
       />
 
       {/* Send button */}
-      <button className="btn btn-primary btn-sm" onClick={handleSend}>
+      <button disabled={!message.length} className="btn btn-primary btn-sm" onClick={handleSend}>
         Send
       </button>
     </div>

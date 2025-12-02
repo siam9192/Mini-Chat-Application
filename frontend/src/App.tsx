@@ -8,11 +8,7 @@ function App() {
 
   return (
     <>
-     
-   
      <UserHomePageLayout/>
-       
-
     </>
   )
 }
